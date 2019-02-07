@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.Operations
 {
     public abstract class Operation
     {

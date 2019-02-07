@@ -14,23 +14,23 @@ namespace TestCalculator
         {
             Addition adittion = new Addition();
             double additionResult = adittion.action(value01, value02);
-            Equals(expected, additionResult);
+            Assert.Equal(expected, additionResult);
         }
 
         [Theory]
         [InlineData(2, 1, 1)]
         [InlineData(-100, 5, -105)]
         [InlineData(-2, -3, 1)]
-        [InlineData(3.20, 3.05, 0.15)]
+        [InlineData(3.1, 3.1, 0)]
         public void subtraction(double value01, double value02, double expected)
         {
             Subtraction subtraction = new Subtraction();
             double subtractionResult = subtraction.action(value01, value02);
-            Equals(expected, subtractionResult);
+            Assert.Equal(expected, subtractionResult);
         }
 
         [Theory]
-        [InlineData(2, 2, 2)]
+        [InlineData(2, 2, 4)]
         [InlineData(-1, 5, -5)]
         [InlineData(-2, -3, 6)]
         [InlineData(3.20, 3.05, 9.76)]
@@ -38,7 +38,7 @@ namespace TestCalculator
         {
             Multiplication multiplication = new Multiplication();
             double multiplicationResult = multiplication.action(value01, value02);
-            Equals(expected, multiplicationResult);
+            Assert.Equal(expected, multiplicationResult);
         }
 
         [Theory]
@@ -50,7 +50,7 @@ namespace TestCalculator
         {
             Division division = new Division();
             double divisionResult = division.action(value01, value02);
-            Equals(expected, divisionResult);
+            Assert.Equal(expected, divisionResult);
         }
     }
 }

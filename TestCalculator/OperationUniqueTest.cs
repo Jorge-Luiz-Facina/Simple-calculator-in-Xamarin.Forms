@@ -14,7 +14,7 @@ namespace TestCalculator
         {
             Percentage percentage = new Percentage();
             double percentageResult = percentage.action(value);
-            Equals(expected, percentageResult);
+            Assert.Equal(expected, percentageResult);
         }
 
         [Theory]
@@ -26,19 +26,20 @@ namespace TestCalculator
         {
             Root root = new Root();
             double rootResult = root.action(value);
-            Equals(expected, rootResult);
+            Assert.Equal(expected, rootResult);
         }
 
         [Theory]
         [InlineData(2, 4)]
         [InlineData(6, 36)]
         [InlineData(-5, 25)]
-        [InlineData(4.69, 21.9961)]
+        [InlineData(2.1, 4.41)]
         public void square(double value, double expected)
+
         {
             Square square = new Square();
             double squareResult = square.action(value);
-            Equals(expected, squareResult);
+            Assert.Equal(expected, squareResult);
         }
     }
 }
