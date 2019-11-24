@@ -22,7 +22,7 @@
 
 ## Author
 
-| [<img src="https://avatars.githubusercontent.com/MainDuelo?v=3&s=115"><br><sub>@MainDuelo</sub>](https://github.com/MainDuelo) |
+| [<img src="https://avatars.githubusercontent.com/MainDuel?v=3&s=115"><br><sub>@MainDuel</sub>](https://github.com/MainDuel) |
 | :---: |
 
 
